@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap_project",
+  "version": "1.0.0",
+  "description": "test test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dasha",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-postcss": "^7.0.1",
+    "gulp-purgecss": "^1.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "browser-sync": "^2.24.6"
+  }
+}

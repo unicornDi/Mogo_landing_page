@@ -1,0 +1,5 @@
+# ignore node_modules folder
+node_modules/
+
+# ignore psd layout
+MoGo_FREE_Template_by_Laaqiq.psd

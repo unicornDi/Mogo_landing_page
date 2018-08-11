@@ -1,0 +1,314 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import './var.scss';
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+.container-fluid {
+    background: $main-color;
+}
+
+
+header {
+    background-image: url(/images/header_background.png);
+    background-position: center;
+    width: 100%;
+    
+
+        .logo {
+            font-family: $main-font;
+            font-size: 30px;
+            font-weight: bold;
+            color: $main-color;
+            
+
+                span {
+                    padding-top: 5px;
+                    text-align: center;
+                }
+        }
+
+        nav {
+            color: $main-color;
+
+                a {
+                    color: inherit;
+                }
+
+                i {
+                   margin-top: 15px;
+                }
+        }
+
+        .greetings {
+            font-family: $cursive-font;
+            font-size: 65px;
+            margin-top: 120px;
+            color: $main-color;
+        }
+
+        .greetings-2 {
+            font-size: 90px;
+            font-family: $main-font;
+            color: $main-color;
+        }
+
+        @media screen and (max-width:488px) {
+            .greetings {
+                font-size: 60px;
+            }
+            .greetings-2 {
+                font-size: 80px;
+            }
+            
+        }
+
+        .bar {
+            background: $main-color;
+            width: 50px;
+            height: 5px;   
+        }
+
+       a {
+           margin-top: 20px;
+       }
+
+        .slider {
+            display: flex;
+            justify-content: space-around;
+            height: 20px;
+            margin-top: 70px;
+            margin-bottom: 30px;
+            
+            .slider-bar {
+                height: 1px;
+                background-color: black;
+            }
+        }    
+}
+
+
+.about-us {
+    @include headers;
+    margin-top: 90px;
+    
+    .about-us-text {
+        margin-top: 40px;
+    }
+
+    .about-us-image-block {
+        margin-top: 30px;
+    }
+}
+
+.statistics {
+    background-color: #95e1d3;
+    margin-top: 50px;
+    padding-top: 20px;
+    font-family: $main-font;
+    color: $main-color;
+
+        .number {
+            font-size: 72px;
+        }
+
+        .words {
+            font-size: 14px;
+            font-weight:400;
+        }
+}
+
+
+.technologies-block {
+    @include headers;
+    margin-top: 90px;
+        .technologies {
+            margin-top: 30px;
+            padding: 40px;
+
+            .technologies-elements {
+
+                i {
+                    color: $light-blue;
+                    opacity: .5;
+                    padding-right: 10px;
+                }
+
+                .tech-box {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 360px;
+                    padding-top: 80px;
+                }
+            }
+        }
+}
+
+.devices {
+        margin-top: 90px;
+        @include background-img ('/images/dev-bg.png');
+        @include headers;
+        background-size: cover;
+        height: 100%;
+        
+
+            h4 {
+                padding-top: 90px;
+            }
+            .img-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+
+                    .empty {
+                        flex-basis: calc((100% - 570px)/2);
+                        @include grow-shrink-reset;
+                    }
+
+                    .img-ipad {
+                        display: flex;
+                        justify-content: center;
+                        @include grow-shrink-reset;
+                    }
+
+                    .img-iphone{
+                        @include grow-shrink-reset;
+                        display: flex;
+                        flex-basis: calc((100% - 570px)/2);
+                        height: 618px;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+
+                        .iphone-box {
+                            position: relative;
+                            z-index: 1;
+                            margin-bottom: -100px;
+                            left: -260px;
+                        }
+                    } 
+            }
+}
+
+.service {
+    @include headers;
+    margin-top: 120px;
+
+    .service-container {
+
+        margin-top: 100px;
+
+        .service-text {
+            margin-top: 40px;
+        }
+
+        .service-photo-box {
+            width: 570px;
+            height: 380px;
+
+                 img {
+                     width: 100%;
+                }
+        }
+
+
+        input[type='checkbox'] {
+                display: none;
+                }
+        .panel {
+            display: flex;
+            align-items: center;
+                .panel-title {
+                    margin-left: 10px;
+                }   
+                .panel-icon {
+                    color: $light-blue;
+                }        
+        }
+                .lbl-toggle {
+                    display: flex;
+                    padding: 1rem;
+                    flex-direction: row;
+                    color: $grey;
+                    border-top: 1px $light-grey solid; 
+                    border-bottom: 1px $light-grey solid; 
+                    justify-content: space-between;
+                    background:$main-color;
+                    font-family: $main-font;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: all 0.25s ease-out;
+                  }
+                  
+                  .lbl-toggle:hover {
+                    color: black;
+                  }
+                  
+                  .collapsible-content {
+                    max-height: 0px;
+                    height: 100px;
+                    overflow: hidden;
+                    font-style: italic;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 15px;
+                    color: #d9d9d9;
+                    transition: max-height .25s ease-in-out;
+                    overflow-y: scroll;
+                  }
+        
+                  
+                  .toggle:checked + .lbl-toggle + .collapsible-content {
+                    max-height: 800px;
+                  }        
+        }
+    }
+
+
+/* Scrollbar */
+
+        /* width */
+          ::-webkit-scrollbar {
+              width: 4px;
+          }
+
+          /* Track */
+          ::-webkit-scrollbar-track {
+              background: $scroll-track; 
+              border-radius: 5px;
+          }
+
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+              background: $light-blue; 
+              border-radius: 10px;
+          }
+
+.comment {
+    background: $comment-section;
+    min-height: 200px;
+    .icon-container {
+        display: flex;
+        align-items: center;
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            border: 2px solid $light-blue;
+        .comment-icon {
+            color: $light-blue;
+        }
+    }
+    }
+
+    .comment-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
