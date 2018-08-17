@@ -201,9 +201,9 @@ header {
 
         margin-top: 100px;
 
-        .service-text {
-            margin-top: 40px;
-        }
+            .service-text {
+                margin-top: 50px;
+            }
 
         .service-photo-box {
             width: 570px;
@@ -286,29 +286,81 @@ header {
               border-radius: 10px;
           }
 
-.comment {
-    background: $comment-section;
-    min-height: 200px;
-    .icon-container {
+    .comment {
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        .icon {
+        background: $comment-section;
+        min-height: 200px;
+        width: 100%;
+        
+            .icon-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 140px;
+                height: 140px;
+                border: 2px solid $light-blue;
+                
+
+            .comment-icon {
+                color: $light-blue;
+            }
+        
+        }
+
+        .comment-text {
+            height: 100%;
+            flex-basis: 60%;
+            margin-left: 1%;
+        }
+        .name {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 10px;
+            width: 140px;
+        
+           .bar-container{
+               display: flex;
+               align-items: center;
+               height: 24px; 
+            .bar {
+                    background: #f38181;
+                    width: 50px;
+                    height: 3px;
+                }
+            }
+
+            span {
+                font-family: $cursive-font;
+                font-size: 15px;
+            }
+            
+        }
+}
+    
+
+.our-team {
+    @include headers;
+    margin-top: 90px;
+
+        .our-team-text {
+            margin-top: 50px;
+        }
+        .gallery-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 150px;
-            height: 150px;
-            border: 2px solid $light-blue;
-        .comment-icon {
-            color: $light-blue;
-        }
-    }
-    }
+            .workers-gallery {
+                margin-top: 90px;
+                display: flex;
+            }
 
-    .comment-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
+            .first-worker {
+                width: 300px;
+                height: 400px;
+            }
+        }
 }
+
