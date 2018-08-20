@@ -9,6 +9,7 @@ $light-blue: #95e1d3;
 $grey: #cccccc;
 $scroll-track: #f5f5f5;
 $comment-section: #f8f8f8;
+$pink: #f38181;
 //mixins 
     @mixin headers {
     
@@ -26,7 +27,7 @@ $comment-section: #f8f8f8;
         }
 
         .bar {
-            background: #f38181;
+            background: $pink;
             width: 50px;
             height: 5px;   
         }
@@ -41,4 +42,22 @@ $comment-section: #f8f8f8;
 @mixin background-img ($img-url) {
 
    background: url($img-url) no-repeat center center fixed;
+}
+
+@mixin photo-box ($img-url) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background: url($img-url) no-repeat center;
+}
+
+@mixin hover-bg ($img-url) {
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(180deg, rgba(234,138,137,0.7) 0%, rgba(242,227,145,0.7) 100%),
+                url($img-url) no-repeat center center;
+    box-shadow: 14px 10px 0px 3px rgba(149,225,211,1);
+    transition: 0.3s ease-in-out;
 }

@@ -368,31 +368,72 @@ header {
                     height: 420px;
                     
                     .first-photo-box {
-                        width: 100%;
-                        height: 90%;
-                        background: url('/images/workers-gallery/first-worker.png') no-repeat center;
+                        @include photo-box('/images/workers-gallery/first-worker.png');
+                    
                     }
-                    .gradient-bg:hover {
-                        width: 100%;
-                        height: 90%;
-                        background: linear-gradient(180deg, rgb(234,138,137) 0%, rgb(242,227,145) 100%);
-                        opacity:0.5;
-                        
-                        }
+                    .first-photo-box:hover {
+                        @include hover-bg('/images/workers-gallery/first-worker.png');
+                    }
                     .second-photo-box {
-                        width: 100%;
-                        height: 90%;
-                        background: url('/images/workers-gallery/second-worker.png') no-repeat center;
+                        @include photo-box('/images/workers-gallery/second-worker.png');
+                    }
+                    .second-photo-box:hover {
+                        @include hover-bg('/images/workers-gallery/second-worker.png');
                     }
                     .third-photo-box {
-                        width: 100%;
-                        height: 90%;
-                        background: url('/images/workers-gallery/third-worker.png') no-repeat center;
+                        @include photo-box('/images/workers-gallery/third-worker.png');
                     }
+                    .third-photo-box:hover {
+                        @include hover-bg('/images/workers-gallery/third-worker.png');
+                         
+                    }
+                    .gallery-icons-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        
+                        .gallery-icons {
+                            display: flex;
+                            flex-basis: 165px; 
+                            justify-content: space-around;
+                           
+                           
+                            a {
+                                visibility: hidden;
+                            }
+                                
+                            a:active {
+                                color: white;
+                            }
+                            a:hover {
+                                color: white;
+                                visibility: visible;
+                            }
+
+                            a {
+                                color:$pink;
+                            }
+                                .icons-border {
+                                    background: #fce38a;
+                                    color: $pink;
+                                    flex-basis: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    visibility: hidden;
+                                }
+                                
+                        }
+
+                        
                     .workers-name {
                         margin-top: 15px;
                     }     
                 }
+            
+            }
             }
         }
 
