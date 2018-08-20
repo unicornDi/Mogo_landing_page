@@ -387,6 +387,11 @@ header {
                         @include hover-bg('/images/workers-gallery/third-worker.png');
                          
                     }
+                    .general-class:hover {
+                        .gallery-icons {
+                            visibility: visible;
+                        }
+                    }
                     .gallery-icons-container {
                         display: flex;
                         justify-content: center;
@@ -397,41 +402,46 @@ header {
                             display: flex;
                             flex-basis: 165px; 
                             justify-content: space-around;
+                            visibility: hidden;
                            
-                           
-                            a {
-                                visibility: hidden;
-                            }
                                 
-                            a:active {
+                            a:active, a:hover {
                                 color: white;
-                            }
-                            a:hover {
-                                color: white;
-                                visibility: visible;
+                                i {
+                                    color:white;
+                                }
+                                .icons-border {
+                                    background: $pink;
+                                }
+                                
                             }
 
                             a {
                                 color:$pink;
+                                width: 40px;
+                                height: 40px;
+                                text-decoration: none;
                             }
-                                .icons-border {
+
+                           
+                                
+                            .icons-border {
                                     background: #fce38a;
                                     color: $pink;
-                                    flex-basis: 40px;
-                                    height: 40px;
                                     display: flex;
+                                    height: 40px;
+                                    width: 40px;
                                     justify-content: center;
-                                    align-items: center;
-                                    visibility: hidden;
+                                    align-items: center;  
                                 }
                                 
                         }
-
+                    }
                         
-                    .workers-name {
-                        margin-top: 15px;
-                    }     
-                }
+            .workers-name {
+                margin-top: 30px;
+            }     
+                
             
             }
             }
