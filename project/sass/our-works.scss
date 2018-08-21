@@ -1,0 +1,35 @@
+.our-works {
+    @include headers;
+    margin-top: 90px;
+
+        .our-works-text {
+            margin-top: 50px;
+        }
+
+        .our-works-gallery {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+
+                .first-gallery-section {
+                    flex-basis: 50%;
+                    height: 300px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                        .man-img {
+                            @include our-works-bg('/images/our-work-gallery/man.png');
+                        }
+                        .roof-img {
+                            @include our-works-bg('/images/our-work-gallery/roof.png');  
+                        }
+
+                        .bridge-img {
+                            @include our-works-bg('/images/our-work-gallery/bridge.png');  
+                        }
+                        .building-img {
+                            @include our-works-bg('/images/our-work-gallery/building.jpg');  
+                        }
+                }
+            }      
+}

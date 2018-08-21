@@ -1,0 +1,16 @@
+.statistics {
+    background-color: #95e1d3;
+    margin-top: 50px;
+    padding-top: 20px;
+    font-family: $main-font;
+    color: $main-color;
+
+        .number {
+            font-size: 72px;
+        }
+
+        .words {
+            font-size: 14px;
+            font-weight:400;
+        }
+}

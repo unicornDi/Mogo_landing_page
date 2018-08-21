@@ -1,6 +1,7 @@
 //Fonts 
 $main-font: 'Montserrat', sans-serif;
 $cursive-font: 'Kaushan Script', cursive;
+$roboto: 'Roboto', sans-serif;
 
 //Colors:
 $main-color: white;
@@ -10,6 +11,7 @@ $grey: #cccccc;
 $scroll-track: #f5f5f5;
 $comment-section: #f8f8f8;
 $pink: #f38181;
+
 //mixins 
     @mixin headers {
     
@@ -60,4 +62,11 @@ $pink: #f38181;
                 url($img-url) no-repeat center center;
     box-shadow: 14px 10px 0px 3px rgba(149,225,211,1);
     transition: 0.3s ease-in-out;
+}
+
+@mixin our-works-bg ($img-url) {
+    flex-basis: 305px;
+    height: 250px;
+    background: url($img-url) center;
+
 }

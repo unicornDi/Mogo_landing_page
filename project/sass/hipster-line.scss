@@ -1,0 +1,17 @@
+.hipster-line {
+    background: $comment-section;
+    min-height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .hipster-line-img:hover {
+        transform: scale(1.2);
+    }
+}

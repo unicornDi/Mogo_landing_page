@@ -1,0 +1,45 @@
+.devices {
+    margin-top: 90px;
+    @include background-img ('/images/dev-bg.png');
+    @include headers;
+    background-size: cover;
+    height: 100%;
+    
+
+        h4 {
+            padding-top: 90px;
+        }
+        .img-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+
+                .empty {
+                    flex-basis: calc((100% - 570px)/2);
+                    @include grow-shrink-reset;
+                }
+
+                .img-ipad {
+                    display: flex;
+                    justify-content: center;
+                    @include grow-shrink-reset;
+                }
+
+                .img-iphone{
+                    @include grow-shrink-reset;
+                    display: flex;
+                    flex-basis: calc((100% - 570px)/2);
+                    height: 618px;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+
+                    .iphone-box {
+                        position: relative;
+                        z-index: 1;
+                        margin-bottom: -100px;
+                        left: -260px;
+                    }
+                } 
+        }
+}
