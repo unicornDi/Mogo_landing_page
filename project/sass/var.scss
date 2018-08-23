@@ -65,8 +65,8 @@ $pink: #f38181;
 }
 
 @mixin our-works-bg ($img-url) {
-    flex-basis: 305px;
+    // flex-basis: 340.5px;
     height: 250px;
-    background: url($img-url) center;
+    background: url($img-url) no-repeat center;
 
 }

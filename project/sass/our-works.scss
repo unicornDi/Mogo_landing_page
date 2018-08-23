@@ -9,27 +9,62 @@
         .our-works-gallery {
             margin-top: 50px;
             display: flex;
-            flex-wrap: wrap;
-
-                .first-gallery-section {
-                    flex-basis: 50%;
-                    height: 300px;
+            flex-flow: row wrap;
+            width: 100%;
+                
+                .col-img {
                     display: flex;
-                    flex-wrap: wrap;
+                    flex-direction: column;
+                    min-height: 500px;
+                    flex-basis: 25%;
 
-                        .man-img {
-                            @include our-works-bg('/images/our-work-gallery/man.png');
+                    .man-img {
+                        @include our-works-bg('/images/our-work-gallery/man.png');
                         }
-                        .roof-img {
-                            @include our-works-bg('/images/our-work-gallery/roof.png');  
+                    .roof-img {
+                        @include our-works-bg('/images/our-work-gallery/roof.png');  
                         }
 
-                        .bridge-img {
-                            @include our-works-bg('/images/our-work-gallery/bridge.png');  
+                    .bridge-img {
+                        @include our-works-bg('/images/our-work-gallery/bridge.png');
                         }
-                        .building-img {
-                            @include our-works-bg('/images/our-work-gallery/building.jpg');  
+                    .building-img {
+                        @include our-works-bg('/images/our-work-gallery/building.jpg');  
                         }
+                    
+
+                    .glass-img {
+                        @include our-works-bg('/images/our-work-gallery/glass.png');   
+                        }
+
+                    .skyscraper-img {
+                        @include our-works-bg('/images/our-work-gallery/skyscraper.png');
+                        }
+                    }
+                .jellyfish-container {
+                    display: flex;
+                    flex-basis: 25%;
+                    .jellyfish-img {
+                        background: url('/images/our-work-gallery/jellyfish.png') no-repeat center;
+                        flex-basis: 100%;
+                        min-height: 500px;
+                          
+                    }
+
                 }
-            }      
+
+            }                  
+    }
+    
+@media screen and (max-width: 900px) {
+    .our-works-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .col-img, .jellyfish-container {
+            flex-basis: 25%;
+        }
+    }
 }
+    
+                
