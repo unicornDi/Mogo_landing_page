@@ -1,0 +1,65 @@
+.clients {
+    margin-top: 50px;
+    @include headers;
+    @include background-img('/images/clients-bg.png');
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+
+        h4 {
+            padding-top: 90px;
+        }
+        .feedback-wrap { 
+            margin-top: 40px;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        
+            .feedback-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-basis: 90%;
+                flex-wrap: wrap;
+
+                    .client {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        margin-top: 50px;
+                       
+                        
+                        .pink-bar {
+                            margin: 10px 10px;
+                            background: $pink;
+                            width: 80px;
+                            height: 3px;   
+                        }
+                        .feedback {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: stretch; 
+                            margin-left: 15px;
+                            line-height: 20px;
+
+                                .clients-name {
+                                    font-family: $main-font;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    padding-bottom: -10px;
+                                }
+
+                                .clients-job {
+                                    font-family: $roboto;
+                                    font-size: 15px;
+                                    font-style: italic;
+                                }
+                        
+                    }
+                }
+        }   
+    }
+
+}

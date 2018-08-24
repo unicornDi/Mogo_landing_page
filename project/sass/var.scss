@@ -65,8 +65,15 @@ $pink: #f38181;
 }
 
 @mixin our-works-bg ($img-url) {
-    // flex-basis: 340.5px;
+    min-width: 340.5px;
     height: 250px;
-    background: url($img-url) no-repeat center;
+    background: url($img-url) no-repeat center center;
 
+}
+
+@mixin our-works-hover ($img-url) {
+    background: linear-gradient(180deg, rgba(234,138,137,0.7) 0%, rgba(242,227,145,0.7) 100%),
+                url($img-url) no-repeat center center;
+    min-width: 340.5px;
+    height: 250px;
 }
