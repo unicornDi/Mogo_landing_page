@@ -1,0 +1,72 @@
+.blog {
+    @include headers;
+    margin-top: 90px;
+    
+
+        .blog-img-block {
+            margin-top: 40px;
+           
+                .blog-img {
+                    position: relative;
+                    margin-bottom: 40px;
+                    
+                    .blue-rectangle {
+                        min-width: 13%;
+                        min-height: 25%;
+                        background: $light-blue;
+                        position: absolute;
+                        top:70%;
+                        left: -7px;
+                        z-index: 1;
+
+                            .data {
+                                color: white;
+                                font-family: $main-font;
+                                font-weight: bold;
+                            }
+                            .month {
+                                color:white;
+                                font-style: italic;
+                                font-family: $roboto;
+                            }
+                    }
+
+                    img {
+                        width: 100%;
+                    } 
+                }
+            .blog-text {
+                .header {
+                    font-family: $main-font;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                .text {
+                    font-family: $roboto;
+                    font-size: 15px;
+                    color: #999999;
+                    margin-top: 20px;
+
+                }
+            }
+            .meta {
+                display: flex;
+                width: 100%;
+                border-top: 1px solid $light-grey;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                
+                .views {
+                  margin-right: 15px; 
+                  color: #999999;
+                }
+                .comments {
+                    color:#999999;
+                }   
+                i {
+                        color: $light-blue;
+                    }
+            }
+            }
+}
