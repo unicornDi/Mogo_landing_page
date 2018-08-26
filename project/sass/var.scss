@@ -42,7 +42,6 @@ $pink: #f38181;
 }
 
 @mixin background-img ($img-url) {
-
    background: url($img-url) no-repeat center center fixed;
 }
 
