@@ -1,0 +1,88 @@
+footer {
+    background: $comment-section;
+    min-height: 450px;
+        h6 {
+            margin-top: 50px;
+        }
+    .about-mogo {
+        margin-top: 50px;
+        margin-left: 130px;
+    }
+    .about-mogo-text {
+        h1 {
+            font-size: 46px;
+            font-family: $main-font;
+            color: $grey;
+            font-weight: bold;
+        }
+        .followers {
+            margin-top: 30px;
+
+                .amount {
+                    font-family: $main-font;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                .word {
+                    font-family: $main-font;
+                }
+        }
+    }
+    .follow-us {
+        border-top: 1px solid $light-grey;
+    }
+
+    .follow-us {
+        display: flex;
+        flex-direction: row;
+        font-style: italic;
+            .about-mogo-icons {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-basis: 60%;
+                color: $light-blue;
+            }
+    }
+
+    .form-group{
+        display: flex;
+        margin-top: 25px;
+            form{
+                border-radius: 0;
+            }
+        
+            button {
+                background: $light-blue;
+                font-weight: bold;
+                border-radius: 0;
+            }
+    }
+
+    .footer-blog {
+    
+        .footer-blog-posts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+                
+                .post {
+                    display: flex;
+
+                        .post-text {
+                            margin-left: 10px;
+                        }
+                }
+        }
+    }
+
+    .instagram {
+        .insta-posts {
+            display: flex;
+            flex-wrap: wrap;
+            width: 270px;
+            height: 270px;
+        }
+    }
+}

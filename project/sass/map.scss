@@ -39,12 +39,8 @@
                 transition: max-height .25s ease-in-out;
             }
 
-            .iframe-map {
-                
-            }
-
             .toggle:checked + .lbl-toggle + .collapsible-map {
-                max-height: 700px;
+                max-height: 450px;
             }       
         }  
 }
