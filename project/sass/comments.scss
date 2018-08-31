@@ -5,6 +5,7 @@
     background: $comment-section;
     min-height: 200px;
     width: 100%;
+    padding: 0;
     
         .icon-container {
             display: flex;
@@ -24,7 +25,6 @@
     .comment-text {
         height: 100%;
         flex-basis: 60%;
-        margin-left: 1%;
     }
     .name {
         display: flex;
@@ -55,4 +55,10 @@
 .second-comment {
     margin-top: 100px;
     background: white;
+}
+
+@media screen and (max-width:445px) {
+    .comment-text {
+        margin-left: 20px;
+    }
 }
