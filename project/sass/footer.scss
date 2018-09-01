@@ -36,13 +36,18 @@ footer {
         flex-direction: row;
         font-style: italic;
         
+            a {
+                color: $light-blue;
+            }
 
+            a:hover {
+                color: $pink;
+            }
             .about-mogo-icons {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 flex-basis: 60%;
-                color: $light-blue;
                 padding-top: 10px;
                 min-width: 204px;
             }
@@ -63,6 +68,9 @@ footer {
                 background: $light-blue;
                 font-weight: bold;
                 border: none;
+            }
+            button:hover {
+                background: $pink;
             }
     }
 
@@ -149,6 +157,7 @@ footer {
         align-items: center;
         flex-direction: column;
     .row > .about-mogo {
+            text-align: center;
             max-width: 700px;
             display: flex;
             flex-direction: column;
@@ -157,6 +166,7 @@ footer {
                 
                 .follow-us {
                     min-width: 380px;
+                    justify-content: center;
                 }
         }
         .footer-blog > h6{
@@ -166,7 +176,7 @@ footer {
         .instagram {
             justify-content: center;
             align-items: center;
-            margin-top: 10  0px;   
+            margin-top: 60px;   
         }
        
     }

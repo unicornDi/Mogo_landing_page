@@ -8,5 +8,51 @@
 
     .about-us-image-block {
         margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+        .about-us-first-img {
+            @include about-us-bg('/images/about_us/notebook.jpg');
+        }
+        .about-us-first-img:hover {
+            @include about-us-bg-hover('/images/about_us/notebook.jpg');
+        }
+
+        .about-us-second-img {
+            @include about-us-bg('/images/about_us/earphones.png');
+        }
+        .about-us-second-img:hover {
+            @include about-us-bg-hover('/images/about_us/earphones.png');
+        }
+
+        .about-us-third-img {
+            @include about-us-bg('/images/about_us/flower.png');
+        }
+
+        .about-us-third-img:hover {
+            @include about-us-bg-hover('/images/about_us/flower.png');
+        }
+
+            .about-us-icon-container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                visibility: hidden;
+                font-size: 18px;
+                font-family: $main-font;
+                font-weight: bold;
+            }
+
+            .general-class:hover {
+                .about-us-icon-container {
+                    visibility: visible;
+                }
+            }
     }
 }

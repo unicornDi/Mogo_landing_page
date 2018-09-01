@@ -77,3 +77,14 @@ $links-grey: #999999;
     min-width: 340.5px;
     height: 250px;
 }
+
+@mixin about-us-bg ($img-url) {
+    background: url($img-url) center center;
+    height: 250px;
+    flex-basis: 340px;
+}
+
+@mixin about-us-bg-hover ($img-url) {
+    background: linear-gradient(180deg, rgba(234,138,137,0.7) 0%, rgba(242,227,145,0.7) 100%),
+                url($img-url) center center;
+}
