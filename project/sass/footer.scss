@@ -10,6 +10,7 @@ footer {
         margin-left: 130px;
     }
     .about-mogo-text {
+        text-align: left;
         h1 {
             font-size: 46px;
             font-family: $main-font;
@@ -46,7 +47,7 @@ footer {
             .about-mogo-icons {
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
+                
                 flex-basis: 60%;
                 padding-top: 10px;
                 min-width: 204px;

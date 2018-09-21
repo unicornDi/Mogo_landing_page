@@ -1,6 +1,5 @@
 header {
-    background-image: url(/images/header_background.png);
-    background-position: center;
+    @include background-img ('/images/header_background.png');
     width: 100%;
     
 
@@ -65,13 +64,20 @@ header {
         .slider {
             display: flex;
             justify-content: space-around;
-            height: 20px;
+            height: 50px;
             margin-top: 70px;
             margin-bottom: 30px;
             
             .slider-bar {
-                height: 1px;
-                background-color: black;
+                height: 3px;
+                width: 20%;
+                background-color: white;
+
+                    span {
+                        color: white;
+                        font-family: $main-font;
+                        font-weight: bold;
+                    }
             }
         }    
 }

@@ -19,9 +19,7 @@
                 @include our-works-bg('/images/our-work-gallery/man.png');
                 }
 
-            .man-img:hover {
-                @include our-works-hover('/images/our-work-gallery/man.png');
-            }    
+        
             .roof-img {
                 
                 @include our-works-bg('/images/our-work-gallery/roof.png');  
