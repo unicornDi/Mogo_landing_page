@@ -21,5 +21,13 @@
   "dependencies": {
     "bootstrap": "^4.1.3",
     "browser-sync": "^2.24.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unicornDi/unicornDi.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unicornDi/unicornDi.github.io/issues"
+  },
+  "homepage": "https://github.com/unicornDi/unicornDi.github.io#readme"
 }
