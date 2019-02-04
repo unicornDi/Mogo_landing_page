@@ -3,12 +3,16 @@ header {
     width: 100%;
     
 
+        .header-top {
+            align-items: center;
+            justify-content: center;
+        }
+
         .logo {
             font-family: $main-font;
             font-size: 30px;
             font-weight: bold;
             color: $main-color;
-            
 
                 span {
                     padding-top: 5px;
@@ -16,15 +20,12 @@ header {
                 }
         }
 
-        nav {
+        .navbar {
             color: $main-color;
+            justify-content: center;
 
                 a {
                     color: inherit;
-                }
-
-                i {
-                   margin-top: 15px;
                 }
         }
 
@@ -72,12 +73,32 @@ header {
                 height: 3px;
                 width: 20%;
                 background-color: white;
-
+                a { 
+                    text-decoration: none;
+                    
                     span {
-                        color: white;
-                        font-family: $main-font;
-                        font-weight: bold;
-                    }
+                    color: white;
+                    font-family: $main-font;
+                    font-weight: bold;
+                }
+            }
+                   
             }
         }    
+}
+
+@media (max-width: 770px) {
+    .slider-wrapper {
+        justify-content: center;
+        display: flex;
+    }
+    .slider {
+        flex-wrap: wrap;
+        max-width: 350px;
+        justify-content: flex-start;
+
+            .slider-bar {
+                min-width: 138px;
+            }
+    }
 }

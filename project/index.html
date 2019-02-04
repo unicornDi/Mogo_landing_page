@@ -23,22 +23,26 @@
 <body>
     <div class="container-fluid p-0">
         <header class="page-header p-0">
-            <div class="row m-0">
-                <div class="col-lg-4 col-md-4 col-sm-4 p-5 logo">
+            <div class="row m-0 header-top">
+                <div class="col-lg-2 col-md-4 col-sm-4 p-5 logo">
                     <span>MoGo</span>
                 </div>
-                <nav class="navbar navbar-expand-lg col-lg-8 col-md-8 col-sm-6">
+                <nav class="navbar navbar-expand-lg col-lg-6 col-md-6 col-sm-6">
                     <a class="nav-item nav-link active" href="#">ABOUT</a>
                     <a class="nav-item nav-link active" href="#">SERVICE</a>
                     <a class="nav-item nav-link active" href="#">WORK</a>
                     <a class="nav-item nav-link active" href="#">BLOG</a>
                     <a class="nav-item nav-link active" href="#">CONTACT</a>
-                    <i class="fas fa-shopping-cart btn" href="#"></i>
-                    <label for="search-bar">
-                        <i class="fas fa-search btn" href="#"></i>
-                    </label>
-                    <input class="search-bar" id="search-bar" type="text" name="search" placeholder="Search">
                 </nav>
+                <div class="search-wrapper">
+                    <i class="fas fa-shopping-cart btn"></i>
+                    <form class="search-bar">
+                        <button class="search-input__button" type="submit">
+                            <i class="fas fa-search btn" href="#"></i>
+                        </button>
+                        <input class="search-bar__input" id="search-input" type="text" name="search" placeholder="Search">
+                    </form>
+                </div>
             </div>
             <div class="greetings text-center">Creative Template</div>
             <div class="greetings-2 text-center">WELCOME TO<br> MOGO</div>
@@ -46,17 +50,17 @@
             <div class="text-center">
                 <a href="#" role="button" class="btn btn-outline-light">LEARN MORE</a>
             </div>
-            <div class="container">
+            <div class="container slider-wrapper">
                 <div class="slider">
-                    <div class="slider-bar"><span>01 INTRO</span></div>
-                    <div class="slider-bar"><span>02 WORK</span></div>
-                    <div class="slider-bar"><span>03 ABOUT</span></div>
-                    <div class="slider-bar"><span>04 CONTACTS</span></div>
+                    <div class="slider-bar"><a href="#intro"><span>01 INTRO</span></a></div>
+                    <div class="slider-bar"><a href="#work"><span>02 WORK</span></a></div>
+                    <div class="slider-bar"><a href="#about"><span>03 ABOUT</span></a></div>
+                    <div class="slider-bar"><a href="#contacts"><span>04 CONTACTS</span></a></div>
                 </div>
             </div> 
         </header>
         <main>
-            <section class="about-us">
+            <section class="about-us" id="intro">
                 <h4 class="small-header text-center">What we do</h4>
                 <h1 class="text-center">STORY ABOUT US</h1>
                 <div class="bar mx-auto"></div>
@@ -203,7 +207,7 @@
                 </div> 
             </section>
 
-            <section class="service">
+            <section id="about" class="service">
             <h4 class="small-header text-center">Service</h4>
             <h1 class="text-center">WHAT WE DO</h1>
             <div class="bar mx-auto"></div>
@@ -384,9 +388,9 @@
                 <div class="hipster-line-img"><img src="images/hipster-brand/img-6.png"></div>
             </section>
 
-            <section class="our-works">
+            <section id="work" class="our-works">
                 <h4 class="small-header text-center">What we do</h4>
-                <h1 class="text-center">SOME OF OUR WORK</h1>
+                <h1 class="text-center">SOME OF OUR WORKS</h1>
                 <div class="bar mx-auto"></div>
                 <div class="container">
                     <div class="row our-works-text text-center">
@@ -588,7 +592,7 @@
 
         </main>
 
-            <footer>
+            <footer id="contacts">
                 <div class="row">
                     <section class="col-lg-4 about-mogo">
                         <div class="about-mogo-text">
